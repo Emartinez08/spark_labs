@@ -41,7 +41,7 @@ jobs:
     #- run: spark-submit --master local hello.py
     - run: wget -O people.csv https://raw.githubusercontent.com/adsoftsito/bigdata/refs/heads/main/datasets/people.csv   
     - run: ls -la
-    - run: spark-submit --master local app.py people.csv
+    - run: spark-submit --master local people.py people.csv
 
     - run: ls -la  
     - name: GIT commit and push docs
